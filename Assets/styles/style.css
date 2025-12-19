@@ -167,6 +167,10 @@ main > section:first-child > div:nth-child(2) {
 #location:focus {
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
 }
+.search {
+  display: flex;
+  gap:5px
+}
 
 /* Property Types Section */
 .property-types {
