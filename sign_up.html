@@ -1,22 +1,50 @@
- <!DOCTYPE html>
- <html>
- 
- <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>Sign-up</title>
-   <link rel="shortcut icon" href="/Assets/Images/header-icon.png" type="image/x-icon" />
- </head>
- 
- <body>
-   <form action="get">
-     <p><label for="username" id="username">Username:</label><br />
-     <input type="text" name="username" id="username" required /></p>
-     <p><label for="email" id="email">Email:</label><br>
-     <input type="email" name="email" id="email" required /></p>
-     <p><label for="password">Password:</label><br><input type="password" name="password" id="password" required /></p>
-     <p><button type="submit">Sign up</button></p>
-     </formm>
- </body>
- 
- </html>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign-up</title>
+  <link rel="shortcut icon" href="/Assets/Images/header-icon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="Assets/styles/style.css">
+  </head>
+
+<body>
+  <main class="auth-container">
+    <div class="auth-card">
+      <h2>Create your account</h2>
+      <p class="small muted">Join Noble Apartments to find and manage listings.</p>
+
+      <form action="#" method="post" class="auth-form" novalidate>
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" required autocomplete="username" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required autocomplete="email" />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required autocomplete="new-password" />
+        </div>
+
+        <div class="form-group">
+          <label for="confirm_password">Confirm password</label>
+          <input type="password" name="confirm_password" id="confirm_password" required autocomplete="new-password" />
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="btn-primary">Sign up</button>
+        </div>
+
+        <p class="small" style="text-align:center">Already have an account? <a href="log_in.html">Log in</a></p>
+      </form>
+    </div>
+  </main>
+
+</body>
+
+</html>
